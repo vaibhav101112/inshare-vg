@@ -10,7 +10,7 @@ app.use(express.json());
 const connectDB = require('./config/db');
 connectDB();
 
-//cors
+//cors for ports
 const corsOptions = {
     origin: process.env.ALLOWED_CLIENTS.split(',')
     // ['http://localhost:3000', 'http://localhost:5000', 'http://localhost:3300']
